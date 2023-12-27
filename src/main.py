@@ -5,7 +5,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from src.router.router import router
 
-
 app = FastAPI(
     title="Graph Backend",
     version="dev",
@@ -28,4 +27,3 @@ async def add_process_request_header(request: Request, call_next: callable):
 
 
 app.include_router(router)
-
